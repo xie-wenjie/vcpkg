@@ -1,4 +1,4 @@
-if (EXISTS "${CURRENT_INSTALLED_DIR}/include/mysql/mysql.h")
+if(EXISTS "${CURRENT_INSTALLED_DIR}/include/mysql/mysql.h")
     message(FATAL_ERROR "FATAL ERROR: libmysql and libmariadb are incompatible.")
 endif()
 

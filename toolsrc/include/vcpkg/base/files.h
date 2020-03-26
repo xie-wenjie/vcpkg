@@ -2,7 +2,9 @@
 
 #include <vcpkg/base/expected.h>
 
-#if defined(_WIN32)
+#define _SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING
+//#if defined(_WIN32)
+#if 0
 #include <filesystem>
 #else
 #include <experimental/filesystem>
